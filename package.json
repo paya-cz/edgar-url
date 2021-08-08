@@ -1,0 +1,41 @@
+{
+    "name": "@mangosteen/edgar-url",
+    "version": "1.0.0",
+    "description": "Get SEC EDGAR URLs for filings and entities.",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "engines": {
+        "node": ">=10"
+    },
+    "scripts": {
+        "build": "tsc",
+        "test-publish-npm": "npm pack",
+        "publish-npm": "npm publish --access public",
+        "prepare": "tsc"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/paya-cz/edgar-url.git"
+    },
+    "keywords": [
+        "edgar",
+        "sec",
+        "sec-edgar",
+        "filings",
+        "submission",
+        "entity",
+        "company",
+        "url"
+    ],
+    "author": "Paya",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/paya-cz/edgar-url/issues"
+    },
+    "homepage": "https://github.com/paya-cz/edgar-url#readme",
+    "devDependencies": {
+        "@tsconfig/node10": "^1.0.8",
+        "@types/node": "^10.17.60",
+        "typescript": "^4.3.5"
+    }
+}
