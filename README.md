@@ -11,10 +11,10 @@ With [npm](https://www.npmjs.com/) do:
 # Usage
 
 ```js
-import edgarUrl from '@mangosteen/edgar-url';
+import { getFilingUrl } from '@mangosteen/edgar-url';
 
 // https://www.sec.gov/Archives/edgar/data/0000320193/0000320193-20-000096.txt
 console.log(
-    edgarUrl.getFilingUrl(320193, '0000320193-20-000096')
+    getFilingUrl(320193, '0000320193-20-000096')
 );
 ```

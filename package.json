@@ -1,6 +1,6 @@
 {
     "name": "@mangosteen/edgar-url",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Get SEC EDGAR URLs for filings and entities.",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
