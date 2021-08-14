@@ -71,7 +71,7 @@ export function geEntityJsonUrl(cik: number): string {
  * - Supplemental documents
  * - Attachments
  * 
- * This file also seems to be updated whenever there are corrections submitted.
+ * This file seems to be updated when corrections are submitted.
  * 
  * @example `https://www.sec.gov/Archives/edgar/data/0000320193/0000320193-20-000096.txt`
  * @param cik Entity's Central Index Key.
@@ -87,7 +87,7 @@ export function getFilingUrl(cik: number, accessionNumber: string): string {
 
 /**
  * Gets URL of a filing header in SGML format. The header is in machine-readable format.
- * The header file does not seem to be updated whenever corrections are submitted.
+ * The header file does not seem to be updated when corrections are submitted.
  * 
  * @example `https://www.sec.gov/Archives/edgar/data/320193/000032019320000096/0000320193-20-000096.hdr.sgml`
  * @param cik Entity's Central Index Key.
