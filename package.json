@@ -1,6 +1,6 @@
 {
     "name": "@mangosteen/edgar-url",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Get SEC EDGAR URLs for filings and entities.",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
@@ -38,6 +38,6 @@
         "@tsconfig/node10": "^1.0.8",
         "@types/node": "^10.17.60",
         "rimraf": "^3.0.2",
-        "typescript": "^4.4.2"
+        "typescript": "^4.4.3"
     }
 }
