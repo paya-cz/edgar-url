@@ -98,12 +98,6 @@ export function getFilingHeaderUrl(cik: number, accessionNumber: string): string
     validateAccessionNumber(accessionNumber);
     cik = repairCik(cik, accessionNumber);
 
-    if (cik === 880026 && accessionNumber === '0001193125-08-024463') {
-        // Doesn't exist: https://www.sec.gov/Archives/edgar/data/0000880026/000119312508024463/0001193125-08-024463.hdr.sgml
-        // Exists:        https://www.sec.gov/Archives/edgar/data/0001319519/000119312508024463/0001193125-08-024463.hdr.sgml
-        cik = 1319519;
-    }
-
     const f_cik = formatCik(cik),
           f_accessionNumber = accessionNumber.replace(/\-+/g, '');
     

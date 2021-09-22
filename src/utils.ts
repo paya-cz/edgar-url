@@ -14,6 +14,15 @@ export function repairCik(cik: number, accessionNumber: string): number {
         return 701169;
     }
 
+    if (cik === 880026 && accessionNumber === '0001193125-08-024463') {
+        // Broken:        https://www.sec.gov/Archives/edgar/data/880026/000119312508024463/0001193125-08-024463.txt
+        // Doesn't exist: https://www.sec.gov/Archives/edgar/data/880026/000119312508024463/0001193125-08-024463.hdr.sgml
+
+        // Fixed:         https://www.sec.gov/Archives/edgar/data/1319519/000119312508024463/0001193125-08-024463.txt
+        // Exists:        https://www.sec.gov/Archives/edgar/data/1319519/000119312508024463/0001193125-08-024463.hdr.sgml
+        return 1319519;
+    }
+
     return cik;
 }
 
