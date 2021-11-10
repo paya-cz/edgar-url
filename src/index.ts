@@ -1,5 +1,5 @@
 import { URL } from 'url';
-import { formatCik, repairCik, validateAccessionNumber } from "./utils";
+import { formatCik, repairCik, validateAccessionNumber } from './utils';
 
 /**
  * Gets an entity (company, person, etc.) landing page URL in primary EDGAR system.
